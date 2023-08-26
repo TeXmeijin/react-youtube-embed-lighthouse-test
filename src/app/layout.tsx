@@ -16,7 +16,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <head>
+      <script src='https://www.youtube.com/iframe_api'></script>
+    </head>
+      <body className={inter.className}>
+        <div>
+          <h1>YouTube埋め込みテスト！！！</h1>
+        </div>
+        {children}
+      </body>
     </html>
   )
 }
