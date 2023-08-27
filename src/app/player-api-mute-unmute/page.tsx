@@ -7,7 +7,7 @@ export default function page(props: Props) {
   return (
     <div>
       <div id="player"></div>
-      <button id="play-button">Start Video</button>
+      <button className={'p-2 bg-blue-700 text-white rounded'} id="play-button">Start Video</button>
       <Script strategy={'afterInteractive'}>
         {
           `
