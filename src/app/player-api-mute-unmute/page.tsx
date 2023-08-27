@@ -23,7 +23,7 @@ export default function page(props: Props) {
       var player;
       function onYouTubeIframeAPIReady() {
       }
-      
+
       const playButton = document.getElementById('play-button');
       playButton.addEventListener('click', () => {
         player = new YT.Player('player', {
@@ -47,7 +47,7 @@ export default function page(props: Props) {
         player.playVideo();
         setTimeout(() => {
           player.unMute();
-        }, 10000);
+        }, 4000);
       }
 
       // 5. The API calls this function when the player's state changes.
